@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>China Travel Guide - Your Journey Starts Here</title>
+    <meta name="description" content="Discover China with professional local guides. Private tours, cultural experiences, and seamless travel arrangements for international visitors." />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="China Travel Guide - Your Journey Starts Here" />
+    <meta property="og:description" content="Discover China with professional local guides. Private tours, cultural experiences, and seamless travel arrangements for international visitors." />
+    <meta property="og:image" content="images/hero-great-wall.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "China Travel Guide",
+      "description": "Professional local guides, personalized tours, and seamless travel arrangements in China.",
+      "url": ".",
+      "telephone": "+86 400-888-8888",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Beijing",
+        "addressCountry": "CN"
+      },
+      "sameAs": [
+        "https://www.facebook.com/",
+        "https://www.instagram.com/"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="logo" aria-hidden="false">
+                <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                <span>China Travel Guide</span>
+            </div>
+            <ul class="nav-links" role="menubar" aria-label="Primary">
+                <li role="none"><a role="menuitem" href="#home">Home</a></li>
+                <li role="none"><a role="menuitem" href="#services">Services</a></li>
+                <li role="none"><a role="menuitem" href="#destinations">Top Destinations</a></li>
+                <li role="none"><a role="menuitem" href="#guides">Tour Guides</a></li>
+                <li role="none"><a role="menuitem" href="#testimonials">Testimonials</a></li>
+                <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero with responsive image -->
+    <section class="hero" id="home" aria-label="Hero">
+        <img
+          class="hero-bg"
+          src="images/hero-great-wall.jpg"
+          alt="The Great Wall of China at sunset"
+          style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;"
+          loading="lazy"
+        />
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content container" style="position:relative; z-index:2;">
+            <h1>Discover the Wonders of China</h1>
+            <p>Professional local guides ready to show you the best of Chinese culture, history, and natural beauty.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get Your Free Quote</a>
+                <a href="#destinations" class="btn btn-secondary">See Top Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services" aria-labelledby="services-title">
+        <div class="container">
+            <h2 id="services-title" class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive travel solutions tailored for international visitors</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-route" aria-hidden="true"></i>
+                    </div>
+                    <h3>Customized Tours</h3>
+                    <p>Personalized itineraries designed around your interests, budget, and travel preferences. Private, small-group, and themed tours available.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hotel" aria-hidden="true"></i>
+                    </div>
+                    <h3>Accommodation Booking</h3>
+                    <p>Handpicked hotels and guesthouses across China, from luxury resorts to authentic local stays vetted for comfort and location.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car" aria-hidden="true"></i>
+                    </div>
+                    <h3>Transportation Services</h3>
+                    <p>Private transfers, train tickets, and seamless logistics planning to keep your trip on schedule and stress-free.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils" aria-hidden="true"></i>
+                    </div>
+                    <h3>Culinary Experiences</h3>
+                    <p>Authentic Chinese cuisine tours, from street food to Michelin-starred restaurants — guided tastings with cultural context.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3>Travel Assistance</h3>
+                    <p>24/7 support, visa guidance, and emergency assistance throughout your journey. We provide local emergency contact numbers for each destination.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie" aria-hidden="true"></i>
+                    </div>
+                    <h3>Hire a Tour Guide</h3>
+                    <p>Book a professional local guide by the hour or by the day. Our guides are certified, English-speaking, and deeply knowledgeable about Chinese culture and history.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations (detail cards) - images use srcset inside picture for responsiveness -->
+    <section class="destinations" id="destinations" aria-labelledby="destinations-title">
+        <div class="container">
+            <h2 id="destinations-title" class="section-title">Top Destinations</h2>
+            <p class="section-subtitle">Explore China's most iconic cities — handpicked attractions and local travel tips for foreign visitors</p>
+            <div class="destinations-grid">
+                <div class="destination-card" id="beijing">
+                    <div class="destination-image">
+                        <img src="images/beijing-great-wall.jpg" alt="The Great Wall of China - iconic landmark" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+                        <div class="destination-overlay">
+                            <h3>Beijing</h3>
+                            <p>Imperial history meets modernity</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h4>Beijing</h4>
+                        <p>Capital city where 500+ years of imperial history unfold. Walk the Great Wall, explore the Forbidden City, and experience authentic Peking duck cuisine.</p>
+                        <div class="destination-tags">
+                            <span>History</span>
+                            <span>Culture</span>
+                            <span>Landmarks</span>
+                        </div>
+                        <button class="btn btn-toggle-attractions" aria-expanded="false" aria-controls="details-beijing">
+                          <span class="toggle-text">View Must-See Attractions & Getting Around</span>
+                          <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                        <div class="card-details" id="details-beijing" hidden>
+                          <div class="attractions-list">
+                            <h5><i class="fas fa-star"></i> Must-See Attractions (via Dianping)</h5>
+                            <ul>
+                                <li><strong>故宫博物院</strong> (Forbidden City) — China's imperial palace, a UNESCO site</li>
+                                <li><strong>八达岭长城</strong> (Badaling Great Wall) — Best-preserved section, cable car available</li>
+                                <li><strong>颐和园</strong> (Summer Palace) — Royal garden with Kunming Lake</li>
+                                <li><strong>天坛公园</strong> (Temple of Heaven) — Iconic circular hall for imperial sacrifices</li>
+                                <li><strong>南锣鼓巷</strong> (Nanluoguxiang) — Historic hutong alley with shops & cafes</li>
+                            </ul>
+                          </div>
+                          <div class="travel-tips">
+                            <h5><i class="fas fa-subway"></i> Getting Around</h5>
+                            <ul>
+                                <li><strong>Metro (地铁):</strong> Most convenient — covers all major sights. Buy a Beijing Transit Card or use Alipay/WeChat QR code.</li>
+                                <li><strong>Bus (公交):</strong> Routes 1-99 cover central areas; number 877 goes to Badaling Great Wall.</li>
+                                <li><strong>Taxi/Didi (打车):</strong> Widely available; use Didi app for English-friendly rides. Avoid yellow-metered cabs at night.</li>
+                                <li><strong>Great Wall Trip:</strong> Take S2 train from Beijing North Station to Badaling (¥25, 70 min) or join a hotel-organized day tour.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <a class="btn btn-link" href="#contact" aria-label="Plan Beijing tour">Plan a Beijing Tour</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" id="shanghai">
+                    <div class="destination-image">
+                        <img src="images/shanghai-bund.jpg" alt="Shanghai skyline with the Bund" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+                        <div class="destination-overlay">
+                            <h3>Shanghai</h3>
+                            <p>China's global financial hub</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h4>Shanghai</h4>
+                        <p>The "Pearl of the Orient" — a dazzling blend of colonial architecture, futuristic skyscrapers, and world-class dining along the Huangpu River.</p>
+                        <div class="destination-tags">
+                            <span>Modern</span>
+                            <span>Shopping</span>
+                            <span>Nightlife</span>
+                        </div>
+                        <button class="btn btn-toggle-attractions" aria-expanded="false" aria-controls="details-shanghai">
+                          <span class="toggle-text">View Must-See Attractions & Getting Around</span>
+                          <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                        <div class="card-details" id="details-shanghai" hidden>
+                          <div class="attractions-list">
+                            <h5><i class="fas fa-star"></i> Must-See Attractions (via Dianping)</h5>
+                            <ul>
+                                <li><strong>外滩</strong> (The Bund) — Colonial-era skyline, best at night with lights</li>
+                                <li><strong>东方明珠</strong> (Oriental Pearl Tower) — Observation deck & revolving restaurant</li>
+                                <li><strong>豫园</strong> (Yu Garden) — Classical Chinese garden near the Old City</li>
+                                <li><strong>上海迪士尼乐园</strong> (Disneyland) — Resort in Pudong, full day needed</li>
+                                <li><strong>田子坊</strong> (Tianzifang) — Artsy lanes with boutiques and craft shops</li>
+                            </ul>
+                          </div>
+                          <div class="travel-tips">
+                            <h5><i class="fas fa-subway"></i> Getting Around</h5>
+                            <ul>
+                                <li><strong>Metro (地铁):</strong> Extensive network, very efficient. Single ride ¥3-10. Download "Metro Man" app.</li>
+                                <li><strong>Ferry (轮渡):</strong> Cross Huangpu River between Puxi and Pudong (¥2, scenic views).</li>
+                                <li><strong>Bus (公交):</strong> Useful for French Concession area; routes 20, 37 cover Bund.</li>
+                                <li><strong>Taxi/Didi:</strong> Abundant; Didi app works well. Tolls apply to cross tunnels to Pudong.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <a class="btn btn-link" href="#contact" aria-label="Plan Shanghai tour">Plan a Shanghai Tour</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" id="xian">
+                    <div class="destination-image">
+                        <img src="images/xian-terracotta.jpg" alt="Terracotta Army - ancient warriors of Xi'an" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+                        <div class="destination-overlay">
+                            <h3>Xi'an</h3>
+                            <p>Ancient capital of China</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h4>Xi'an</h4>
+                        <p>The starting point of the Silk Road — famous for the Terracotta Army, ancient city walls you can bike around, and vibrant Muslim food streets.</p>
+                        <div class="destination-tags">
+                            <span>History</span>
+                            <span>Archeology</span>
+                            <span>Silk Road</span>
+                        </div>
+                        <button class="btn btn-toggle-attractions" aria-expanded="false" aria-controls="details-xian">
+                          <span class="toggle-text">View Must-See Attractions & Getting Around</span>
+                          <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                        <div class="card-details" id="details-xian" hidden>
+                          <div class="attractions-list">
+                            <h5><i class="fas fa-star"></i> Must-See Attractions (via Dianping)</h5>
+                            <ul>
+                                <li><strong>秦始皇兵马俑博物馆</strong> (Terracotta Army) — World-famous, arrive early to avoid crowds</li>
+                                <li><strong>大雁塔</strong> (Giant Wild Goose Pagoda) — Tang dynasty Buddhist pagoda</li>
+                                <li><strong>西安城墙</strong> (Ancient City Wall) — China's best-preserved; rent a bike to cycle the full circle</li>
+                                <li><strong>回民街</strong> (Muslim Quarter / Huimin Street) — Famous for roujiamo, yangrou paomo, and skewered lamb</li>
+                                <li><strong>大唐不夜城</strong> (Tang Dynasty Night City) — Walking street with light shows & performances</li>
+                            </ul>
+                          </div>
+                          <div class="travel-tips">
+                            <h5><i class="fas fa-subway"></i> Getting Around</h5>
+                            <ul>
+                                <li><strong>Metro (地铁):</strong> Line 2 & 3 cover main areas; ¥2-7 per ride.</li>
+                                <li><strong>To Terracotta Army:</strong> Take Metro Line 1 to "Banpo" station, then transfer to Bus 5 (30 min). Or take direct tourist bus from Xi'an Train Station.</li>
+                                <li><strong>City Wall Bike:</strong> Rent a bicycle at any of the 4 wall gates (¥45/day) for a 2-hour ride around the perimeter.</li>
+                                <li><strong>Train from Beijing:</strong> High-speed rail takes ~4.5 hours (¥553 first class).</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <a class="btn btn-link" href="#contact" aria-label="Plan Xi'an tour">Plan a Xi'an Tour</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" id="guilin">
+                    <div class="destination-image">
+                        <img src="images/guilin-li-river.jpg" alt="Guilin Yangshuo karst mountains and Li River scenery" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+                        <div class="destination-overlay">
+                            <h3>Guilin</h3>
+                            <p>Yangshuo — China's most beautiful landscape</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h4>Guilin / Yangshuo</h4>
+                        <p>"桂林山水甲天下" — Cruise the Li River through limestone karst mountains, then explore Yangshuo's riverside streets and rural cycling routes.</p>
+                        <div class="destination-tags">
+                            <span>Nature</span>
+                            <span>Scenic</span>
+                            <span>Relaxation</span>
+                        </div>
+                        <button class="btn btn-toggle-attractions" aria-expanded="false" aria-controls="details-guilin">
+                          <span class="toggle-text">View Must-See Attractions & Getting Around</span>
+                          <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                        <div class="card-details" id="details-guilin" hidden>
+                          <div class="attractions-list">
+                            <h5><i class="fas fa-star"></i> Must-See Attractions (via Dianping)</h5>
+                            <ul>
+                                <li><strong>漓江游船</strong> (Li River Cruise) — Guilin→Yangshuo, 4-hour boat ride through karst peaks (¥215+)</li>
+                                <li><strong>阳朔西街</strong> (Yangshuo West Street) — Pedestrian street with cafes, bars & souvenir shops</li>
+                                <li><strong>遇龙河竹筏</strong> (Yulong River Bamboo Raft) — Peaceful raft ride near Yangshuo (¥160-260/person)</li>
+                                <li><strong>龙脊梯田</strong> (Longji Rice Terraces) — Dramatic layered terraces, best Sept-Nov after harvest</li>
+                                <li><strong>十里画廊</strong> (Ten Mile Gallery) — Scenic cycling route from Yangshuo, hire a bike (¥10/day)</li>
+                            </ul>
+                          </div>
+                          <div class="travel-tips">
+                            <h5><i class="fas fa-subway"></i> Getting Around</h5>
+                            <ul>
+                                <li><strong>To Yangshuo:</strong> Bus from Guilin Station (¥25, 1.5h) or private car (¥150, 1h). Direct train from Guilin to Yangshuo also available.</li>
+                                <li><strong>River Cruise:</strong> Book through your hotel or online. Sit on the right side for better views. Bring sunscreen & a hat.</li>
+                                <li><strong>In Yangshuo:</strong> Everything is walkable. Rent electric bikes (¥30/day) for exploring nearby villages.</li>
+                                <li><strong>To Longji:</strong> Hire a private car (¥400 round trip, 3h each way) or join a tour bus from Guilin.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <a class="btn btn-link" href="#contact" aria-label="Plan Guilin tour">Plan a Guilin Tour</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" id="chengdu">
+                    <div class="destination-image">
+                        <img src="images/chengdu-panda.jpg" alt="Giant panda in Chengdu" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+                        <div class="destination-overlay">
+                            <h3>Chengdu</h3>
+                            <p>Home of the giant pandas</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h4>Chengdu</h4>
+                        <p>The laid-back capital of Sichuan — meet giant pandas in their natural habitat, explore ancient tea houses, and brave the world's spiciest cuisine.</p>
+                        <div class="destination-tags">
+                            <span>Wildlife</span>
+                            <span>Food</span>
+                            <span>Culture</span>
+                        </div>
+                        <button class="btn btn-toggle-attractions" aria-expanded="false" aria-controls="details-chengdu">
+                          <span class="toggle-text">View Must-See Attractions & Getting Around</span>
+                          <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                        <div class="card-details" id="details-chengdu" hidden>
+                          <div class="attractions-list">
+                            <h5><i class="fas fa-star"></i> Must-See Attractions (via Dianping)</h5>
+                            <ul>
+                                <li><strong>大熊猫繁育研究基地</strong> (Panda Breeding Base) — See pandas up close, arrive before 9am for active pandas</li>
+                                <li><strong>宽窄巷子</strong> (Kuan Zhai Alleys) — Traditional teahouses, Sichuan snacks, and cultural performances</li>
+                                <li><strong>锦里古街</strong> (Jinli Ancient Street) — Walking street near Wuhou Temple, good for souvenirs</li>
+                                <li><strong>武侯祠博物馆</strong> (Wuhou Temple) — Three Kingdoms era memorial, oldest in China</li>
+                                <li><strong>春熙路</strong> (Chunxi Road) — Main shopping area, try local snacks like stinky tofu and dragon's beard candy</li>
+                            </ul>
+                          </div>
+                          <div class="travel-tips">
+                            <h5><i class="fas fa-subway"></i> Getting Around</h5>
+                            <ul>
+                                <li><strong>Metro (地铁):</strong> Clean, efficient; Lines 1, 2, 3 cover main areas. ¥2-9 per ride.</li>
+                                <li><strong>To Panda Base:</strong> Bus 198 from Chunxi Road or take a taxi (~¥40, 30 min). Opens 7:30am — go early!</li>
+                                <li><strong>To Dujiangyan / Wolong:</strong> High-speed train from Chengdu West (¥10, 30 min) for Dujiangyan panda area.</li>
+                                <li><strong>Food Tip:</strong> Ask for "不辣" (not spicy) if you can't handle Sichuan chili. Try mapo tofu and hot pot at lunchtime.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <a class="btn btn-link" href="#contact" aria-label="Plan Chengdu tour">Plan a Chengdu Tour</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" id="hongkong">
+                    <div class="destination-image">
+                        <img src="images/hongkong-victoria.jpg" alt="Hong Kong skyline with Victoria Harbour" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+                        <div class="destination-overlay">
+                            <h3>Hong Kong</h3>
+                            <p>Asia's world city</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h4>Hong Kong</h4>
+                        <p>The former British colony — a vertical city of skyscrapers, street food, and world-class shopping on both sides of Victoria Harbour.</p>
+                        <div class="destination-tags">
+                            <span>Shopping</span>
+                            <span>Cuisine</span>
+                            <span>Nightlife</span>
+                        </div>
+                        <button class="btn btn-toggle-attractions" aria-expanded="false" aria-controls="details-hongkong">
+                          <span class="toggle-text">View Must-See Attractions & Getting Around</span>
+                          <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                        <div class="card-details" id="details-hongkong" hidden>
+                          <div class="attractions-list">
+                            <h5><i class="fas fa-star"></i> Must-See Attractions (via Dianping)</h5>
+                            <ul>
+                                <li><strong>维多利亚港</strong> (Victoria Harbour) — Take the Star Ferry (HK$6.5) for iconic skyline views</li>
+                                <li><strong>太平山顶</strong> (Victoria Peak) — Take the historic Peak Tram for panoramic views (HK$36 round trip)</li>
+                                <li><strong>尖沙咀</strong> (Tsim Sha Tsui) — Waterfront promenade, Cultural Centre, Avenue of Stars</li>
+                                <li><strong>香港迪士尼乐园</strong> (Disneyland) — On Lantau Island, MTR Disney Resort line</li>
+                                <li><strong>尖沙咀天星码头</strong> (TST Star Ferry Pier) — Watch the nightly "Symphony of Lights" at 8pm</li>
+                            </ul>
+                          </div>
+                          <div class="travel-tips">
+                            <h5><i class="fas fa-subway"></i> Getting Around</h5>
+                            <ul>
+                                <li><strong>MTR (港铁):</strong> World-class subway, covers everything. Buy an Octopus Card (HK$100 deposit) or use contactless credit card.</li>
+                                <li><strong>Star Ferry (天星小轮):</strong> The cheapest harbor cruise — Central ↔ TST (HK$2.5-6.5).</li>
+                                <li><strong>Tram (叮叮车):</strong> Vintage double-decker trams on Hong Kong Island (HK$2.6, great for sightseeing).</li>
+                                <li><strong>Peak Tram (山顶缆车):</strong> Central → Victoria Peak; cheaper to go up at opening (7am) to avoid queues.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <a class="btn btn-link" href="#contact" aria-label="Plan Hong Kong tour">Plan a Hong Kong Tour</a>
+                    </div>
+                </div>
+
+                <div class="destination-card featured-destination" id="guiyang">
+                    <div class="destination-image">
+                        <img src="images/guiyang-waterfall.jpg" alt="Huangguoshu Waterfall near Guiyang" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+                        <div class="destination-overlay">
+                            <h3>Guiyang</h3>
+                            <p>Summer paradise in southwest China</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h4>Guiyang <span class="featured-badge">Featured</span></h4>
+                        <p>China's "Summer Capital" — cool mountains, dramatic waterfalls, and rich ethnic minority culture in Guizhou province.</p>
+                        <div class="destination-tags">
+                            <span>Nature</span>
+                            <span>Waterfalls</span>
+                            <span>Ethnic Culture</span>
+                        </div>
+                        <button class="btn btn-toggle-attractions" aria-expanded="false" aria-controls="details-guiyang">
+                          <span class="toggle-text">View Must-See Attractions & Getting Around</span>
+                          <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                        <div class="card-details" id="details-guiyang" hidden>
+                          <div class="attractions-list">
+                            <h5><i class="fas fa-star"></i> Must-See Attractions (via Dianping)</h5>
+                            <ul>
+                                <li><strong>黄果树大瀑布</strong> (Huangguoshu Waterfall) — China's largest waterfall, spectacular June-Oct</li>
+                                <li><strong>青岩古镇</strong> (Qingyan Ancient Town) — Ming dynasty fortress, 600+ years old, ethnic Miao culture</li>
+                                <li><strong>甲秀楼</strong> (Jiaxiu Tower) — Iconic wooden tower over the Nanming River</li>
+                                <li><strong>小七孔</strong> (Xiaoqikong Karst) — "Super aquarium of the karst world," turquoise water & stone arches</li>
+                                <li><strong>西江千户苗寨</strong> (Xijiang Miao Village) — World's largest Miao settlement, 1,288 households</li>
+                            </ul>
+                          </div>
+                          <div class="travel-tips">
+                            <h5><i class="fas fa-subway"></i> Getting Around</h5>
+                            <ul>
+                                <li><strong>To Huangguoshu:</strong> High-speed train from Guiyang to Anshun West (¥47, 35 min), then bus to waterfall (¥20, 1h). Full tour ¥300+.</li>
+                                <li><strong>To Qingyan:</strong> Bus 210 from Guiyang (¥2, 40 min) — most accessible attraction from the city.</li>
+                                <li><strong>To Xijiang:</strong> Train from Guiyang to Kaili (¥70, 2h), then minibus to village (¥25, 40 min). Stay overnight.</li>
+                                <li><strong>In Guiyang:</strong> City center is walkable; use Didi for longer trips. Try local sour soup fish (酸汤鱼)!</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <a class="btn btn-link" href="#contact" aria-label="Plan Guiyang tour">Plan a Guiyang Tour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tour Guides -->
+    <section class="tour-guides" id="guides" aria-labelledby="guides-title">
+        <div class="container">
+            <h2 id="guides-title" class="section-title">Meet Our Expert Local Guides</h2>
+            <p class="section-subtitle">Dedicated professionals who bring China's cities to life — with real photos, contact details, and verified reviews</p>
+            <div class="guides-grid">
+                <!-- Guide 1: Beijing -->
+                <div class="guide-card">
+                    <div class="guide-photo">
+                        <img src="images/guide-michael.jpg" alt="Guide Michael Wang - Beijing Specialist" loading="lazy" />
+                    </div>
+                    <div class="guide-info">
+                        <h4>Michael Wang</h4>
+                        <p class="guide-role">Senior Beijing Specialist</p>
+                        <p class="guide-city"><i class="fas fa-map-marker-alt"></i> Based in Beijing</p>
+                        <p class="guide-phone"><i class="fas fa-phone"></i> +86 138-0013-8001</p>
+                        <div class="guide-specialties">
+                            <span>Forbidden City</span>
+                            <span>Great Wall</span>
+                            <span>Hutong Tours</span>
+                        </div>
+                        <div class="guide-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(142 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="guide-reviews">
+                        <h5>What travelers say:</h5>
+                        <p class="guide-review">"Michael's knowledge of the Forbidden City was incredible. He made 600 years of history come alive for our family!" — <strong>Sarah M.</strong>, USA, Mar 2025</p>
+                        <p class="guide-review">"Best guide we've ever had. Organized, knowledgeable, and great with kids." — <strong>James T.</strong>, UK, Feb 2025</p>
+                    </div>
+                </div>
+
+                <!-- Guide 2: Shanghai -->
+                <div class="guide-card">
+                    <div class="guide-photo">
+                        <img src="images/guide-emily.jpg" alt="Guide Emily Chen - Shanghai Specialist" loading="lazy" />
+                    </div>
+                    <div class="guide-info">
+                        <h4>Emily Chen</h4>
+                        <p class="guide-role">Shanghai & East China Expert</p>
+                        <p class="guide-city"><i class="fas fa-map-marker-alt"></i> Based in Shanghai</p>
+                        <p class="guide-phone"><i class="fas fa-phone"></i> +86 138-0013-8002</p>
+                        <div class="guide-specialties">
+                            <span>Bund & Pudong</span>
+                            <span>Food Tours</span>
+                            <span>Art Deco</span>
+                        </div>
+                        <div class="guide-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(98 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="guide-reviews">
+                        <h5>What travelers say:</h5>
+                        <p class="guide-review">"Emily showed us the best local food in Shanghai. Her xiaolongbao tasting tour was unforgettable!" — <strong>David L.</strong>, Canada, Apr 2025</p>
+                        <p class="guide-review">"Perfect blend of history and modern Shanghai. Highly recommended!" — <strong>Anna K.</strong>, Australia, Jan 2025</p>
+                    </div>
+                </div>
+
+                <!-- Guide 3: Xi'an -->
+                <div class="guide-card">
+                    <div class="guide-photo">
+                        <img src="images/guide-david.jpg" alt="Guide David Li - Xi'an Specialist" loading="lazy" />
+                    </div>
+                    <div class="guide-info">
+                        <h4>David Li</h4>
+                        <p class="guide-role">Xi'an & Ancient History Guide</p>
+                        <p class="guide-city"><i class="fas fa-map-marker-alt"></i> Based in Xi'an</p>
+                        <p class="guide-phone"><i class="fas fa-phone"></i> +86 138-0013-8003</p>
+                        <div class="guide-specialties">
+                            <span>Terracotta Army</span>
+                            <span>Silk Road</span>
+                            <span>Muslim Quarter</span>
+                        </div>
+                        <div class="guide-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(87 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="guide-reviews">
+                        <h5>What travelers say:</h5>
+                        <p class="guide-review">"David picked us up at the train station and made our Xi'an trip seamless. His Terracotta Army tour was fascinating." — <strong>Robert H.</strong>, Germany, Mar 2025</p>
+                        <p class="guide-review">"Great storytelling about the Silk Road. We loved the city wall biking trip!" — <strong>Lisa W.</strong>, Singapore, Feb 2025</p>
+                    </div>
+                </div>
+
+                <!-- Guide 4: Chengdu -->
+                <div class="guide-card">
+                    <div class="guide-photo">
+                        <img src="images/guide-sophia.jpg" alt="Guide Sophia Liu - Chengdu Specialist" loading="lazy" />
+                    </div>
+                    <div class="guide-info">
+                        <h4>Sophia Liu</h4>
+                        <p class="guide-role">Chengdu & Sichuan Nature Guide</p>
+                        <p class="guide-city"><i class="fas fa-map-marker-alt"></i> Based in Chengdu</p>
+                        <p class="guide-phone"><i class="fas fa-phone"></i> +86 138-0013-8004</p>
+                        <div class="guide-specialties">
+                            <span>Panda Tours</span>
+                            <span>Sichuan Cuisine</span>
+                            <span>Leshan Buddha</span>
+                        </div>
+                        <div class="guide-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(115 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="guide-reviews">
+                        <h5>What travelers say:</h5>
+                        <p class="guide-review">"Sophia got us into the panda base before the crowds. We saw pandas eating bamboo — dream come true!" — <strong>Emma R.</strong>, USA, May 2025</p>
+                        <p class="guide-review">"Her hot pot dinner recommendation was the best meal we had in China." — <strong>Thomas B.</strong>, France, Apr 2025</p>
+                    </div>
+                </div>
+
+                <!-- Guide 5: Guilin/Yangshuo -->
+                <div class="guide-card">
+                    <div class="guide-photo">
+                        <img src="images/guide-jenny.jpg" alt="Guide Jenny Zhang - Guilin Specialist" loading="lazy" />
+                    </div>
+                    <div class="guide-info">
+                        <h4>Jenny Zhang</h4>
+                        <p class="guide-role">Guilin & Yangshuo Scenic Guide</p>
+                        <p class="guide-city"><i class="fas fa-map-marker-alt"></i> Based in Guilin</p>
+                        <p class="guide-phone"><i class="fas fa-phone"></i> +86 138-0013-8005</p>
+                        <div class="guide-specialties">
+                            <span>Li River Cruise</span>
+                            <span>Yangshuo Cycling</span>
+                            <span>Longji Terraces</span>
+                        </div>
+                        <div class="guide-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(76 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="guide-reviews">
+                        <h5>What travelers say:</h5>
+                        <p class="guide-review">"Jenny arranged the perfect Li River cruise and Yangshuo cycling day. Breathtaking scenery!" — <strong>Peter G.</strong>, Netherlands, Mar 2025</p>
+                        <p class="guide-review">"She speaks perfect English and knows every hidden gem in Yangshuo." — <strong>Maria S.</strong>, Spain, Feb 2025</p>
+                    </div>
+                </div>
+
+                <!-- Guide 6: Hong Kong -->
+                <div class="guide-card">
+                    <div class="guide-photo">
+                        <img src="images/guide-kevin.jpg" alt="Guide Kevin Wong - Hong Kong Specialist" loading="lazy" />
+                    </div>
+                    <div class="guide-info">
+                        <h4>Kevin Wong</h4>
+                        <p class="guide-role">Hong Kong & Peninsula Expert</p>
+                        <p class="guide-city"><i class="fas fa-map-marker-alt"></i> Based in Hong Kong</p>
+                        <p class="guide-phone"><i class="fas fa-phone"></i> +852 9123-4567</p>
+                        <div class="guide-specialties">
+                            <span>Victoria Peak</span>
+                            <span>Dim Sum Tours</span>
+                            <span>Temple Street</span>
+                        </div>
+                        <div class="guide-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(64 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="guide-reviews">
+                        <h5>What travelers say:</h5>
+                        <p class="guide-review">"Kevin's dim sum tour was the highlight of our Hong Kong trip. He knows the best local spots!" — <strong>Jennifer L.</strong>, Canada, Apr 2025</p>
+                        <p class="guide-review">"Great recommendations for off-the-beaten-path places in Hong Kong." — <strong>Michael P.</strong>, USA, Mar 2025</p>
+                    </div>
+                </div>
+
+                <!-- Guide 7: Guiyang -->
+                <div class="guide-card">
+                    <div class="guide-photo">
+                        <img src="images/guide-lucy.jpg" alt="Guide Lucy Huang - Guiyang Specialist" loading="lazy" />
+                    </div>
+                    <div class="guide-info">
+                        <h4>Lucy Huang</h4>
+                        <p class="guide-role">Guizhou & Ethnic Culture Guide</p>
+                        <p class="guide-city"><i class="fas fa-map-marker-alt"></i> Based in Guiyang</p>
+                        <p class="guide-phone"><i class="fas fa-phone"></i> +86 138-0013-8007</p>
+                        <div class="guide-specialties">
+                            <span>Huangguoshu Falls</span>
+                            <span>Miao Villages</span>
+                            <span>Karst Landscapes</span>
+                        </div>
+                        <div class="guide-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(53 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="guide-reviews">
+                        <h5>What travelers say:</h5>
+                        <p class="guide-review">"Lucy's knowledge of ethnic minority cultures in Guizhou is remarkable. The Miao village overnight was unforgettable." — <strong>Anna M.</strong>, Italy, May 2025</p>
+                        <p class="guide-review">"She made the trip to Huangguoshu Waterfall effortless. A true professional!" — <strong>William C.</strong>, UK, Apr 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+            <h2 id="testimonials-title" class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Real experiences from travelers around the world</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content" aria-hidden="false">
+                        <div class="rating" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>"Our guide made our trip to China unforgettable. He was incredibly knowledgeable about Chinese history and culture. We felt like we had a friend showing us around."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" aria-hidden="true">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>John Smith</h4>
+                            <p>United States</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>"The customized tour exceeded all expectations. From the Terracotta Army to the beautiful landscapes of Guilin, every moment was perfectly planned."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" aria-hidden="true">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>United Kingdom</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>"Excellent service from start to finish. Our guide was friendly, professional, and spoke perfect English. We will definitely use China Travel Guide again!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" aria-hidden="true">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Canada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <h2 id="contact-title" class="section-title">Get Your Free Travel Quote</h2>
+            <p class="section-subtitle">Tell us about your travel plans and we'll create a personalized itinerary</p>
+            <div class="contact-content">
+                <div class="contact-form" aria-hidden="false">
+                    <form id="contactForm" method="post" action="#" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number (optional)" />
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Preferred Destination(s)</label>
+                            <select id="destination" name="destination" multiple>
+                                <option value="beijing">Beijing</option>
+                                <option value="shanghai">Shanghai</option>
+                                <option value="xian">Xi'an</option>
+                                <option value="guilin">Guilin</option>
+                                <option value="chengdu">Chengdu</option>
+                                <option value="guiyang">Guiyang (Summer Retreat)</option>
+                                <option value="hongkong">Hong Kong</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="departureDate">Departure Date</label>
+                            <input type="date" id="departureDate" name="departureDate" placeholder="DD/MM/YYYY" />
+                            <small class="date-hint">Format: DD/MM/YYYY (e.g., 25/09/2025)</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="returnDate">Return Date</label>
+                            <input type="date" id="returnDate" name="returnDate" placeholder="DD/MM/YYYY" />
+                            <small class="date-hint">Format: DD/MM/YYYY (e.g., 05/10/2025)</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="travelers">Number of Travelers</label>
+                            <input type="number" id="travelers" name="travelers" min="1" max="50" value="2" />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Special Requests</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your travel preferences, interests, or any special requirements"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Request Free Quote</button>
+                    </form>
+                </div>
+
+                <aside class="contact-info" aria-labelledby="contact-info-title">
+                    <h3 id="contact-info-title" class="visually-hidden">Contact information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+86 400-888-8888</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@chinatravelguide.com">info@chinatravelguide.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <div>
+                            <h4>Headquarters</h4>
+                            <p>Beijing, China</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <div>
+                            <h4>Office Hours</h4>
+                            <p>Mon - Sun: 9:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="social-links" aria-label="Social links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo" aria-hidden="true
